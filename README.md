@@ -22,6 +22,8 @@ $ composer require artka54/ampify:1.0.1
 ## Usage
 
 ``` php
+use artka54\ampify\Ampify as Ampify;
+
 $Ampify   = new Ampify($htmlToConvert);
 $Ampified = $Ampify->ampifyImgs();
 ```
