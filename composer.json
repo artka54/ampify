@@ -1,18 +1,18 @@
 {
-    "name": ":vendor/:package_name",
+    "name": "artka54/ampify",
     "type": "library",
-    "description": ":package_description",
+    "description": "Convert your IMG tags to google-amp supported amp-img",
     "keywords": [
-        ":vendor",
-        ":package_name"
+        "artka54",
+        "ampify"
     ],
-    "homepage": "https://github.com/:vendor/:package_name",
+    "homepage": "https://github.com/artka54/ampify",
     "license": "MIT",
     "authors": [
         {
-            "name": ":author_name",
-            "email": ":author_email",
-            "homepage": ":author_website",
+            "name": "Arturs Kalnins",
+            "email": "artka54@gmail.com",
+            "homepage": "https://github.com/artka54",
             "role": "Developer"
         }
     ],
@@ -21,16 +21,17 @@
     },
     "require-dev": {
         "phpunit/phpunit" : ">=5.4.3",
-        "squizlabs/php_codesniffer": "^2.3"
+        "squizlabs/php_codesniffer": "^2.3",
+        "laravel/laravel": "dev-develop"
     },
     "autoload": {
         "psr-4": {
-            ":vendor\\:package_name\\": "src"
+            "artka54\\ampify\\": "src"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            ":vendor\\:package_name\\": "tests"
+            "artka54\\ampify\\Tests\\": "tests"
         }
     },
     "scripts": {
