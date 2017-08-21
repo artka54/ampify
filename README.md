@@ -7,22 +7,8 @@
 [![Quality Score][ico-code-quality]][link-code-quality]
 [![Total Downloads][ico-downloads]][link-downloads]
 
-**Note:** Replace ```Arturs Kalnins``` ```artka54``` ```https://github.com/artka54``` ```artka54@gmail.com``` ```artka54``` ```ampify``` ```Convert your IMG tags to google-amp supported amp-img``` with their correct values in [README.md](README.md), [CHANGELOG.md](CHANGELOG.md), [CONTRIBUTING.md](CONTRIBUTING.md), [LICENSE.md](LICENSE.md) and [composer.json](composer.json) files, then delete this line. You can run `$ php prefill.php` in the command line to make all replacements at once. Delete the file prefill.php as well.
-
-This is where your description should go. Try and limit it to a paragraph or two, and maybe throw in a mention of what
-PSRs you support to avoid any confusion with users and contributors.
-
-## Structure
-
-If any of the following are applicable to your project, then the directory structure should follow industry best practises by being named the following.
-
-```
-bin/        
-config/
-src/
-tests/
-vendor/
-```
+This is a small package to convert regular html <img> tags to <amp-img>.
+This package is tested with ckeditor.
 
 
 ## Install
@@ -36,23 +22,20 @@ $ composer require artka54/ampify
 ## Usage
 
 ``` php
-$skeleton = new artka54\ampify();
-echo $skeleton->echoPhrase('Hello, League!');
+$Ampify   = new Ampify($htmlToConvert);
+$Ampified = $Ampify->ampifyImgs();
+```
+
+WARNING: 
+Your img must contain src, style(indicating width and height) and alt (can be empty) attributes.
+E.g a properly formatted img tag that can be successfuly converted with this package:
+```html
+<img alt="here is the alt" src="http://example.com/blahblah.png" style="height:599px; width:900px"> 
 ```
 
 ## Change log
 
 Please see [CHANGELOG](CHANGELOG.md) for more information on what has changed recently.
-
-## Testing
-
-``` bash
-$ composer test
-```
-
-## Contributing
-
-Please see [CONTRIBUTING](CONTRIBUTING.md) and [CONDUCT](CONDUCT.md) for details.
 
 ## Security
 
