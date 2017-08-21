@@ -2,7 +2,6 @@
 namespace artka54\ampify\Tests\Unit;
 
 use artka54\ampify\Ampify;
-//use artka54\ampify\Tests\TestCase;
 
 class TestImgTagConversion extends \PHPUnit\Framework\TestCase
 {
