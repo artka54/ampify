@@ -16,7 +16,7 @@ This package is tested with ckeditor.
 Via Composer
 
 ``` bash
-$ composer require artka54/ampify
+$ composer require artka54/ampify:1.0.1
 ```
 
 ## Usage
