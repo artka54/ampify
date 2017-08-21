@@ -7,7 +7,7 @@
 [![Quality Score][ico-code-quality]][link-code-quality]
 [![Total Downloads][ico-downloads]][link-downloads]
 
-This is a small package to convert regular html <img> tags to <amp-img>.
+This is a package to convert regular html ```<img>``` tags to those obligated by Google-Amp ```<amp-img>```.
 This package is tested with ckeditor.
 
 
